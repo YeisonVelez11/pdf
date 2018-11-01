@@ -1,0 +1,7 @@
+{
+  "name": "ionicautoevaluacion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,33 @@
+page-document {
+  .card-header {
+     background-color: transparent;
+  }
+
+  .titulo_bottom{
+    position: fixed;
+    bottom: 42px;
+    right: 0;
+    background-color: rgba(15,15,15,.897);
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #fff;
+    z-index: 999;
+    white-space: nowrap;
+
+  }
+
+  h5{
+    font-size: 2.64rem;
+    vertical-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px !important;
+  }
+
+  .footer{
+    position:fixed !important;
+  }
+  
+}

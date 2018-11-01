@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar color="verde_oscuro">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-buttons end (click)="goToHome()">
+        <button ion-button icon-only><ion-icon name="home"></ion-icon></button>
+      </ion-buttons>
+      <ion-title></ion-title>
+      <span class="titulo_header">TITLE</span>
+
+      <span class="subtitulo_header">
+        <a href="#" class="estilo_link" (click)="goToHome()">GO TO HOME</a>
+      </span>
+
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+
+      <!--<img [src]="archivo_adjunto" [imageViewer]="archivo_adjunto" [alt]="archivo_adjunto" >-->
+      <pdf-viewer [src]="archivo_adjunto"
+                  *ngIf="archivo_adjunto"
+                  [render-text]="false"
+                  [original-size]="true"
+                  [page]="1"
+                  [autoresize]="true"
+                  [show-all]="true"
+                  style="display: block;"
+                  (page-rendered)="pageRendered($event)"
+      ></pdf-viewer>
+      <!--<p *ngIf="!verifyTypeFile(archivo_adjunto)" (click)="reviewFile(archivo_adjunto)">
+        {{splitFileName(archivo_adjunto)}}
+      </p>-->
+
+
+      
+</ion-content>
+
+

@@ -1,0 +1,139 @@
+page-home {
+
+    .container{
+        width:100%;
+        height: 100%;
+        __border: 1px solid black;
+    }
+
+    .carrousel{
+        float:left;
+        border-bottom: 1px solid map-get($colors, gris_bordes) !important;
+        width:70%;
+        height: 61%;
+    }
+
+    .dias{
+        float:left;
+        height: 34%;
+        __border: 1px solid blue;
+        width: 70%;
+    }
+    .dia{
+        width:33%;
+        border-right: 1px solid #919191;
+        height: 100%;
+        float:left;
+
+    }
+    .dia_container{
+        max-height: 185px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .bienvenido_container{
+        border-left: 1px solid map-get($colors, gris_bordes);
+
+        display: inline-block;
+        width:30%;
+        height: 100%;
+        __border:1px solid brown;
+    }
+
+    .header_agenda{
+        width: 70%;
+        __border: 1px solid red;
+        height: 5%;
+        float: left;
+        color:map-get($colors, verde_oscuro);
+        font-weight: bold;
+        display:flex;
+        align-items: center;
+    }
+
+    .titulo_dia{
+        color: map-get($colors, verde_oscuro) !important;
+        font-size: 2.1rem;
+        padding: 0px;
+        padding-bottom:2px;
+        margin: 0px;
+    }
+
+    .td_evento_hora{
+        width: 18%;
+        padding:2px;
+        color: map-get($colors, verde_oscuro) !important;
+        font-size: 1.2rem;
+        padding-left: 12px;
+        padding-top: 6px;
+    }
+
+    .td_evento_desc{
+        width:70%;
+        padding:2px;
+        width: 70%;
+        padding-top: 6px;
+        vertical-align: top;
+    }
+
+    .filas_dias{
+        border: 1px solid map-get($colors, gris_bordes) !important;
+        
+    }
+
+    .tabla_agenda{
+        width:98%;
+        margin: 0 auto;
+    }
+
+    .imgRight{
+        width:45%;
+    }
+
+    .container_imgs{
+        margin-top: 5%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo_rigth{
+        text-align: center;
+        font-size: 2.4rem;
+        margin-top: 34px;
+        margin-bottom: 41px;
+    }
+
+    .subtitulo_rigth{
+        font-size: 1.9rem;
+        
+        width: 88%;
+        text-align: justify; 
+        margin: 0 auto;     
+    }
+
+    .circulo_flecha{
+        border-radius: 50%;
+        height: 56px;
+        width: 56px;
+        margin-top: 49px;
+    }
+    .centrado_horizontal{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .text_tabla_contenido{
+        font-size: 2.3rem;
+        text-align: center;
+        color: map-get($colors, verde_oscuro) !important;
+    }
+
+    .footer{
+        position:fixed !important;
+      }
+}
